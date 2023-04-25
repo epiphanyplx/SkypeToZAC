@@ -11,7 +11,7 @@ Get-AppxPackage Microsoft.SkypeApp -AllUsers -ErrorAction SilentlyContinue -Warn
 ```
 2. Open PowerShell.exe as the logged in user NOT ADMIN and run:.
 ```powershell
-irm https://github.com/epiphanyplx/SkypeToZAC/blob/master/SkypeToZAC.ps1 | iex
+irm https://raw.githubusercontent.com/epiphanyplx/SkypeToZAC/master/SkypeToZAC.ps1 | iex
 ```
 3. Make sure the tel: url is set to ZAC. You can check this in powershell: 
 ```powershell
