@@ -27,7 +27,7 @@ Write-Host -ForegroundColor Green "Creating .bat file"
 $BatFile = "@echo off
 set origNumber=%1
 set number=%origNumber:?call=%
-`"C:\Program Files (x86)\Zultys\ZAC\ZAC.exe`" call=%number%"
+"C:\Program Files (x86)\Zultys\ZAC\ZAC.exe" call=%number%
 $BatFile | Out-file -Encoding "ASCII" C:\SkypeToZAC\SkypeToZAC.bat
 
 #Create README File
