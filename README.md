@@ -1,6 +1,6 @@
 # SkypeToZAC
 Forked from SkypeToTeams by CB954: https://github.com/CB954/SkypeToTeams
-<br>Ended up changing it to use mshta as you could still see the popup with this method.
+<br>Ended up changing it to use mshta as you could still see the popup with previous method.
 
 # Information
 The Script creates a ps1 file in C:\SkypeToZAC. The ps1 file converts the skype call to one accepted by ZAC. 
