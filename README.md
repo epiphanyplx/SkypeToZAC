@@ -1,9 +1,10 @@
 # SkypeToZAC
 Forked from SkypeToTeams by CB954: https://github.com/CB954/SkypeToTeams
-Ended up changing it to use mshta as you could still see the popup with this method.
+<br>Ended up changing it to use mshta as you could still see the popup with this method.
 
 # Information
-The Script creates a ps1 file in C:\SkypeToZAC. The ps1 file converts the skype call to one accepted by ZAC. I built this for ConnectWise Manage as it only integrates with Skype - fat client integrates with TAPI as well but ZAC does not support TAPI. The ps1 file was needed because the call to skype has "?call" on the end of the phone number and ZAC will throw an error.
+The Script creates a ps1 file in C:\SkypeToZAC. The ps1 file converts the skype call to one accepted by ZAC. 
+<br>I built this for ConnectWise Manage as it only integrates with Skype - fat client integrates with TAPI as well but ZAC does not support TAPI. The ps1 file was needed because the call to skype has "?call" on the end of the phone number and ZAC will throw an error.
 
 # Installation
 1. Make sure Skype is removed from the computer. Elevated PowerShell Session:
@@ -12,7 +13,7 @@ Get-AppxPackage Microsoft.SkypeApp -AllUsers -ErrorAction SilentlyContinue -Warn
 ```
 2. Open PowerShell.exe as the logged in user NOT ADMIN and run:.
 ```powershell
-irm https://raw.githubusercontent.com/epiphanyplx/SkypeToZAC/master/SkypeToZAC.ps1 | iex
+irm https://raw.githubusercontent.com/epiphanyplx/SkypeToZAC/master/SkypeToZACInstall.ps1 | iex
 ```
 3. Make sure the tel: url is set to ZAC. You can check this in powershell: 
 ```powershell
