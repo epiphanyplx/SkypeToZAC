@@ -32,9 +32,9 @@ Param
     [string]$uri
   )
   
-$number = $uri.replace("skype:","")
-$number = $number.replace("?call","")
-start-process "C:\Program Files (x86)\Zultys\ZAC\ZAC.exe" call=$number"
+$number = $uri.replace('skype:','')
+$number = $number.replace('?call','')
+start-process 'C:\Program Files (x86)\Zultys\ZAC\ZAC.exe' call=$number"
 $ps1File | Out-file -Encoding "ASCII" C:\SkypeToZAC\SkypeToZAC.ps1
 
 #Create README File
