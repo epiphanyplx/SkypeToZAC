@@ -25,7 +25,7 @@ if (!(Test-Path C:\SkypeToZAC)) {New-Item -Type Directory 'C:\SkypeToZAC'}
 
 #Create Bat file
 Write-Host -ForegroundColor Green "Downloading .ps1 file"
-iwr -URI https://raw.githubusercontent.com/epiphanyplx/SkypeToZAC/master/SkypeToZAC.ps1 -outfile c:\SkypeToZAC\SkypeToZAC.ps1
+iwr -URI 'https://raw.githubusercontent.com/epiphanyplx/SkypeToZAC/master/SkypeToZAC.ps1' -outfile 'c:\SkypeToZAC\SkypeToZAC.ps1'
 
 #Create README File
 Write-Host -ForegroundColor Green "Creating README File"
