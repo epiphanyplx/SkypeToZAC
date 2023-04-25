@@ -11,13 +11,16 @@
    Creation Date: 4/25/2023
 #>
 
+#Uninstall Skype
+Write-Host -ForegroundColor Green "Uninstalling Skype"
+Get-AppxPackage Microsoft.SkypeApp -AllUsers -ErrorAction SilentlyContinue -WarningAction SilentlyContinue | Remove-AppPackage -AllUsers -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
+
 #Create/Modify Reg Keys
 Write-Host -ForegroundColor Green "Modifying Registry"
 New-Item "HKCU:\Software\Classes\skype\shell\open\command" -Force | Out-Null
 New-ItemProperty "HKCU:\Software\Classes\skype" -Name '(Default)' -Value 'URL:skype' -Force | Out-Null
 New-ItemProperty "HKCU:\Software\Classes\skype" -Name 'URL Protocol' -Force | Out-Null
 New-ItemProperty "HKCU:\Software\Classes\skype\shell\open\command" -Name '(Default)' -Value 'mshta vbscript:Execute("CreateObject(""Wscript.Shell"").Run ""powershell -NoLogo -ExecutionPolicy Bypass -Command """"& c:\SkypeToZAC\SkypeToZAC.ps1 -uri %1"""""", 0: window.close")' -Force | Out-Null
-
 
 #Make sure C:\SkypeToZAC folder exists
 Write-Host -ForegroundColor Green "Creating Directory C:\SkypeToZAC"
