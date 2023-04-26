@@ -4,7 +4,8 @@ Forked from SkypeToTeams by CB954: https://github.com/CB954/SkypeToTeams
 
 # Information
 The Script creates a ps1 file in C:\SkypeToZAC. The ps1 file converts the skype call to one accepted by ZAC. 
-<br>I built this for ConnectWise Manage as it only integrates with Skype - fat client integrates with TAPI as well but ZAC does not support TAPI. The ps1 file was needed because the call to skype has "?call" on the end of the phone number and ZAC will throw an error.
+<br>I built this for ConnectWise Manage as it only integrates with Skype - fat client integrates with TAPI as well but ZAC does not support TAPI. 
+<br>The ps1 file was needed because the call to skype has "?call" on the end of the phone number and ZAC will throw an error.
 
 # Installation
 1. Open PowerShell.exe and run:.
