@@ -12,9 +12,3 @@ The Script creates a ps1 file in C:\SkypeToZAC. The ps1 file converts the skype 
 ```powershell
 irm https://raw.githubusercontent.com/epiphanyplx/SkypeToZAC/master/SkypeToZACInstall.ps1 | iex
 ```
-2. Make sure the tel: url is set to ZAC. You can check this in powershell: 
-```powershell
-Start-Process "tel:18000000000"
-``` 
-^If this does not open ZAC then you need to set ZAC as the default app. 
-<br>**Windows 10:** Settings>Apps>Default Apps>Choose Default Apps by Protocol>find tel and set to ZAC
